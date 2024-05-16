@@ -7,3 +7,7 @@ variable "use_locals" {
     type = bool
     # default = "471112639379-my-tf-test-bucket"
 }
+
+# variable "slack_webhook_url" {
+#     type = string
+# }

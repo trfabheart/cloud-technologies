@@ -6,9 +6,10 @@ module "label" {
 }
 
 resource "aws_dynamodb_table" "this" {
-  name           = module.label.id
-  read_capacity  = 20
-  write_capacity = 20
+  name = module.label.id
+  billing_mode = "PAY_PER_REQUEST"
+  # read_capacity  = 20
+  # write_capacity = 20
   hash_key       = "id"
 
   attribute {
